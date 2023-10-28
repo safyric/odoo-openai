@@ -3,28 +3,16 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     'name': 'OpenAI Connector',
-    'version': '16.0.0.0',
+    'version': '12.0.0.0',
     'author': 'Myrrkel',
     'website': 'https://github.com/myrrkel',
     'summary': "Connector for OpenAI API",
-    'sequence': 0,
-    'certificate': '',
     'license': 'AGPL-3',
     'depends': [
         'base',
         'mail',
     ],
-    'external_dependencies': {
-        'python': ['openai'],
-    },
     'category': 'OpenAI',
-    'complexity': 'easy',
-    'qweb': [
-    ],
-    'demo': [
-    ],
-    'images': [
-    ],
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',
@@ -36,13 +24,6 @@
         'views/openai_image_views.xml',
         'views/openai_image_result_views.xml',
     ],
-    'assets': {
-        'web.assets_backend': [
-            'openai_connector/static/src/scss/style.scss',
-        ],
-    },
-
     'auto_install': False,
     'installable': True,
-    'application': False,
 }
