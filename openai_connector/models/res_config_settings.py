@@ -12,4 +12,4 @@ class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
     openai_api_key = fields.Char(string="OpenAI API Key", config_parameter='openai_api_key')
-    openai_organization_id = fields.Char(string="OpenAI Organisation ID", config_parameter='openai_organization_id')
+    openai_api_base = fields.Char(string="OpenAI Base Point", config_parameter='openai_api_base')
